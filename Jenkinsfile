@@ -14,7 +14,7 @@ pipeline {
         stage('Build Terrascan and generate test results') {
             steps {
                 // clone the terrascan repository
-                git branch: 'support-junitXML', url: 'https://github.com/patilpankaj212/terrascan.git'
+                git branch: 'master', url: 'https://github.com/accurics/terrascan.git'
 
                 // build terrascan
                 sh "make build"   
